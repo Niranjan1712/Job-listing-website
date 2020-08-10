@@ -14,7 +14,7 @@ $mail->Host     = "smtp.gmail.com";
 $mail->Mailer   = "smtp";
 $mail->SetFrom("vincy@phppot.com", "PHPPot");
 $mail->AddReplyTo("vincy@phppot.com", "PHPPot");
-$mail->AddAddress("coolniranjan1712@gmail.com");
+$mail->AddAddress("addressmail@gmail.com");
 $mail->Subject = $subject;
 $mail->WordWrap   = 80;
 $mail->MsgHTML($content);
