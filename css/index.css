@@ -1,0 +1,215 @@
+@media (min-width: 768px) {
+  /* show 3 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+  }
+
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+ .carousel-item{
+        height: auto;
+        min-height: 300px;
+       }
+      .photo{
+        width: 100%;
+        height: auto;
+      }
+
+
+       
+         .border-out{
+          height: auto;
+          /*border: 3px solid black;*/
+          text-align: center;
+          margin:auto;
+          margin-top: 20px;
+          text-align: center;
+         }
+         .border-in{
+          border: 3px solid black;
+          height: auto;
+          text-align: center;
+          margin:auto;
+          border-radius: 5%;
+         
+         }
+         .colo{
+          background-color: rgba(169,169,169,0.8);
+         }
+         .em{
+          border: 2px solid red;
+          height: 20px;
+         }
+         .img-size{
+          width: 200px;
+          height: 40px;
+         }
+         .fot-log{
+          height: 30px;
+          width: 30px;
+         }
+         .fot{
+          /*border: 3px solid red;*/ 
+          
+          height: 50px;
+          padding-top: 9px;
+         }
+         .fot-in{
+          /*border: 3px solid green;*/
+          background-color: rgba(0,0,0,0.8);
+          padding-top: 10px;
+          height: 52px;
+         }
+         .place{
+          text-align: center;
+          padding-top: 9px;
+         }
+
+          .place1{
+          text-align: center;
+         }
+         .gap{
+          margin-right: 10px;
+         }
+
+         @media only screen and (max-width: 768px) {
+          .place {
+          padding-top: 10px;
+           }
+           .col-sm-5{
+            display: none;
+           }
+           
+           
+
+             
+        }
+
+        @media only screen and (max-width: 400px) {
+          .place {
+          padding-top: 9px;
+          }
+          
+
+         
+        }
+
+         @media only screen and (max-width: 1442px) {
+          
+        }
+
+
+        .job-ser{
+          margin-top: 20px;
+          background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("img/back3.jpg");
+      background-size: cover;
+      width: 100%;
+      
+
+        }
+
+      .job-ser-in{
+        height: 367px;
+        /*border: 3px solid cyan;*/
+       
+      }
+
+       .job-ser-in1{
+        height: 367px;
+        /*border: 3px solid cyan;*/
+        padding-left: 7%;
+        padding-top: 8%;
+      }
+      .job-ser-imag{
+        height: 400px;
+        width: 100%;
+      }
+      .quotes{
+        margin-top: 20px;
+      }
+
+      .carousel-caption{
+        padding-bottom: 250px;
+       /* font-family: poppins;*/
+      }
+      .carousel-caption h2{
+        font-size: 70px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .carousel-caption h2 span{
+        color:#edbb00;
+      }
+     /* .card-image{
+        height: 100px;
+        width: 100px;
+      }*/
+      .front{
+        border: 3px solid red;
+        height: auto;
+        margin:0px;
+      }
+     .rounded-circle{
+      background-color: grey;
+      height: 40px;
+      width: 40px;
+     }
+    /* body{
+      background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("image/.jpg");
+      background-size: cover;
+      width: 100%;
+     }
